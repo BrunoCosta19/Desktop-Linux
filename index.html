@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge" />
+<meta name="description" content="JavaScript desktop environment built with jQuery." />
+<title>Desktop</title>
+<!--[if lt IE 7]>
+<script>
+window.top.location = 'http://desktop.sonspring.com/ie.html';
+</script>
+<![endif]-->
+<link rel="stylesheet" href="assets/css/reset.css" />
+<link rel="stylesheet" href="assets/css/desktop.css" />
+<!--[if lt IE 9]>
+<link rel="stylesheet" href="assets/css/ie.css" />
+<![endif]-->
+</head>
+<body>
+<div class="abs" id="wrapper">
+  <div class="abs" id="desktop">
+    <a class="abs icon" style="left:20px;top:20px;" href="#icon_dock_computer">
+      <img src="assets/images/icons/icon_32_computer.png" />
+      Computador
+    </a>
+    <a class="abs icon" style="left:20px;top:100px;" href="#icon_dock_drive">
+      <img src="assets/images/icons/icon_32_drive.png" />
+      Disco rígido
+    </a>
+    <a class="abs icon" style="left:20px;top:180px;" href="#icon_dock_disc">
+      <img src="assets/images/icons/icon_32_disc.png" />
+      Músicas
+    </a>
+    <a class="abs icon" style="left:20px;top:260px;" href="#icon_dock_network">
+      <img src="assets/images/icons/icon_32_network.png" />
+      Rede
+    </a>
+    <div id="window_computer" class="abs window">
+      <div class="abs window_inner">
+        <div class="window_top">
+          <span class="float_left">
+            <img src="assets/images/icons/icon_16_computer.png" />
+            Computador
+          </span>
+          <span class="float_right">
+            <a href="#" class="window_min"></a>
+            <a href="#" class="window_resize"></a>
+            <a href="#icon_dock_computer" class="window_close"></a>
+          </span>
+        </div>
+        <div class="abs window_content">
+          <div class="window_aside">
+            Olá. Você parece bem hoje!
+          </div>
+          <div class="window_main">
+            <table class="data">
+              <thead>
+                <tr>
+                  <th class="shrink">
+                    &nbsp;
+                  </th>
+                  <th>
+                    Nome
+                  </th>
+                  <th>
+                    Modificar data
+                  </th>
+                  <th>
+                    Criar data
+                  </th>
+                  <th>
+                    Tamanho
+                  </th>
+                  <th>
+                    Tipo
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_drive.png" />
+                  </td>
+                  <td>
+                    Disco rígido
+                  </td>
+                  <td>
+                    Hoje
+                  </td>
+                  <td>
+                    &mdash;
+                  </td>
+                  <td>
+                    200 GB
+                  </td>
+                  <td>
+                    Volume
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_disc.png" />
+                  </td>
+                  <td>
+                    Músicas
+                  </td>
+                  <td>
+                    &mdash;
+                  </td>
+                  <td>
+                    &mdash;
+                  </td>
+                  <td>
+                    2.92 GB
+                  </td>
+                  <td>
+                    Media
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_network.png" />
+                  </td>
+                  <td>
+                    Rede
+                  </td>
+                  <td>
+                    &mdash;
+                  </td>
+                  <td>
+                    &mdash;
+                  </td>
+                  <td>
+                    &mdash;
+                  </td>
+                  <td>
+                    Rede
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_folder_remote.png" />
+                  </td>
+                  <td>
+                    Arquivos de projeto compartilhados
+                  </td>
+                  <td>
+                    Ontem
+                  </td>
+                  <td>
+                    06/07/23
+                  </td>
+                  <td>
+                    524 MB
+                  </td>
+                  <td>
+                    pasta
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_documents.png" />
+                  </td>
+                  <td>
+                    Documentos
+                  </td>
+                  <td>
+                    Ontem
+                  </td>
+                  <td>
+                    06/07/23
+                  </td>
+                  <td>
+                    524 MB
+                  </td>
+                  <td>
+                    pasta
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_system.png" />
+                  </td>
+                  <td>
+                    Preferencias
+                  </td>
+                  <td>
+                    &mdash;
+                  </td>
+                  <td>
+                    &mdash;
+                  </td>
+                  <td>
+                    &mdash;
+                  </td>
+                  <td>
+                    Sistema
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_trash.png" />
+                  </td>
+                  <td>
+                    Lixo
+                  </td>
+                  <td>
+                    Hoje
+                  </td>
+                  <td>
+                    &mdash;
+                  </td>
+                  <td>
+                    &mdash;
+                  </td>
+                  <td>
+                    Lixeira
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="abs window_bottom">
+          Construção: TK421
+        </div>
+      </div>
+      <span class="abs ui-resizable-handle ui-resizable-se"></span>
+    </div>
+    <div id="window_drive" class="abs window">
+      <div class="abs window_inner">
+        <div class="window_top">
+          <span class="float_left">
+            <img src="assets/images/icons/icon_16_drive.png" />
+            Disco rígido
+          </span>
+          <span class="float_right">
+            <a href="#" class="window_min"></a>
+            <a href="#" class="window_resize"></a>
+            <a href="#icon_dock_drive" class="window_close"></a>
+          </span>
+        </div>
+        <div class="abs window_content">
+          <div class="window_aside">
+            Mémoria em uso: 119.1 GB
+          </div>
+          <div class="window_main">
+            <table class="data">
+              <thead>
+                <tr>
+                  <th class="shrink">
+                    &nbsp;
+                  </th>
+                  <th>
+                    Nome
+                  </th>
+                  <th>
+                    Modificar data
+                  </th>
+                  <th>
+                    Data de criação
+                  </th>
+                  <th>
+                    Tamanho
+                  </th>
+                  <th>
+                    Tipo
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_page.png" />
+                  </td>
+                  <td>
+                    .DS_Store
+                  </td>
+                  <td>
+                    Ontem
+                  </td>
+                  <td>
+                    &mdash;
+                  </td>
+                  <td>
+                    6 KB
+                  </td>
+                  <td>
+                    Escondido
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_folder_home.png" />
+                  </td>
+                  <td>
+                    Usuário padrão
+                  </td>
+                  <td>
+                    Hoje
+                  </td>
+                  <td>
+                    &mdash;
+                  </td>
+                  <td>
+                    &mdash;
+                  </td>
+                  <td>
+                    Pasta
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_folder.png" />
+                  </td>
+                  <td>
+                    Aplicativos
+                  </td>
+                  <td>
+                    Ontem
+                  </td>
+                  <td>
+                    &mdash;
+                  </td>
+                  <td>
+                    &mdash;
+                  </td>
+                  <td>
+                    Pasta
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_folder.png" />
+                  </td>
+                  <td>
+                    Desenvolvedor
+                  </td>
+                  <td>
+                    07/06/23
+                  </td>
+                  <td>
+                    &mdash;
+                  </td>
+                  <td>
+                    &mdash;
+                  </td>
+                  <td>
+                    Pasta
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_folder.png" />
+                  </td>
+                  <td>
+                    Biblioteca
+                  </td>
+                  <td>
+                    09/04/23
+                  </td>
+                  <td>
+                    &mdash;
+                  </td>
+                  <td>
+                    &mdash;
+                  </td>
+                  <td>
+                    Pasta
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_folder.png" />
+                  </td>
+                  <td>
+                    Sistema
+                  </td>
+                  <td>
+                    Ontem
+                  </td>
+                  <td>
+                    &mdash;
+                  </td>
+                  <td>
+                    &mdash;
+                  </td>
+                  <td>
+                    Pasta
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="abs window_bottom">
+          Livre: 80.9 GB
+        </div>
+      </div>
+      <span class="abs ui-resizable-handle ui-resizable-se"></span>
+    </div>
+    <div id="window_disc" class="abs window">
+      <div class="abs window_inner">
+        <div class="window_top">
+          <span class="float_left">
+            <img src="assets/images/icons/icon_16_disc.png" />
+            Músicas- Titulo do Album
+          </span>
+          <span class="float_right">
+            <a href="#" class="window_min"></a>
+            <a href="#" class="window_resize"></a>
+            <a href="#icon_dock_disc" class="window_close"></a>
+          </span>
+        </div>
+        <div class="abs window_content">
+          <div class="window_aside align_center">
+            <img src="assets/images/misc/album_cover.jpg" />
+            <br />
+            <em>Nome do albúm</em>
+          </div>
+          <div class="window_main">
+            <table class="data">
+              <thead>
+                <tr>
+                  <th class="shrink">
+                    &nbsp;
+                  </th>
+                  <th class="shrink">
+                    música
+                  </th>
+                  <th>
+                    Nome da música
+                  </th>
+                  <th class="shrink">
+                    Comprimento
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_music.png" />
+                  </td>
+                  <td class="align_center">
+                    01
+                  </td>
+                  <td>
+                    Track 1
+                  </td>
+                  <td class="align_right">
+                    3:50
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_music.png" />
+                  </td>
+                  <td class="align_center">
+                    02
+                  </td>
+                  <td>
+                    Track 2
+                  </td>
+                  <td class="align_right">
+                    3:50
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_music.png" />
+                  </td>
+                  <td class="align_center">
+                    03
+                  </td>
+                  <td>
+                    Track 3
+                  </td>
+                  <td class="align_right">
+                    4:02
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_music.png" />
+                  </td>
+                  <td class="align_center">
+                    04
+                  </td>
+                  <td>
+                    Track 4
+                  </td>
+                  <td class="align_right">
+                    3:47
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_music.png" />
+                  </td>
+                  <td class="align_center">
+                    05
+                  </td>
+                  <td>
+                    Track 5
+                  </td>
+                  <td class="align_right">
+                    4:38
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_music.png" />
+                  </td>
+                  <td class="align_center">
+                    06
+                  </td>
+                  <td>
+                    Track 6
+                  </td>
+                  <td class="align_right">
+                    3:16
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_music.png" />
+                  </td>
+                  <td class="align_center">
+                    07
+                  </td>
+                  <td>
+                    Track 7
+                  </td>
+                  <td class="align_right">
+                    3:53
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_music.png" />
+                  </td>
+                  <td class="align_center">
+                    08
+                  </td>
+                  <td>
+                    Track 8
+                  </td>
+                  <td class="align_right">
+                    1:41
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_music.png" />
+                  </td>
+                  <td class="align_center">
+                    09
+                  </td>
+                  <td>
+                    Track 9
+                  </td>
+                  <td class="align_right">
+                    3:40
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_music.png" />
+                  </td>
+                  <td class="align_center">
+                    10
+                  </td>
+                  <td>
+                    Track 10
+                  </td>
+                  <td class="align_right">
+                    4:33
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_music.png" />
+                  </td>
+                  <td class="align_center">
+                    11
+                  </td>
+                  <td>
+                    Track 11
+                  </td>
+                  <td class="align_right">
+                    3:49
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_music.png" />
+                  </td>
+                  <td class="align_center">
+                    12
+                  </td>
+                  <td>
+                    Track 12
+                  </td>
+                  <td class="align_right">
+                    1:11
+                  </td>
+                </tr>
+                <tr>
+                  <td class="shrink">
+                    <img src="assets/images/icons/icon_16_music.png" />
+                  </td>
+                  <td class="align_center">
+                    13
+                  </td>
+                  <td>
+                    Track 13
+                  </td>
+                  <td class="align_right">
+                    6:17
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="abs window_bottom">
+          Gênero: Rock/Rap
+        </div>
+      </div>
+      <span class="abs ui-resizable-handle ui-resizable-se"></span>
+    </div>
+    <div id="window_network" class="abs window">
+      <div class="abs window_inner">
+        <div class="window_top">
+          <span class="float_left">
+            <img src="assets/images/icons/icon_16_network.png" />
+              Rede
+          </span>
+          <span class="float_right">
+            <a href="#" class="window_min"></a>
+            <a href="#" class="window_resize"></a>
+            <a href="#icon_dock_network" class="window_close"></a>
+          </span>
+        </div>
+        <div class="abs window_content">
+          <div class="window_aside">
+            Recursos de rede local
+          </div>
+          <div class="window_main">
+            <table class="data">
+              <thead>
+                <tr>
+                  <th class="shrink">
+                    &nbsp;
+                  </th>
+                  <th>
+                    Nome
+                  </th>
+                  <th class="shrink">
+                    Sistema operacional
+                  </th>
+                  <th class="shrink">
+                    Versão
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_server.png" />
+                  </td>
+                  <td>
+                    Terror Urbano - <em>Servidor gamer</em>
+                  </td>
+                  <td>
+                    Linux
+                  </td>
+                  <td>
+                    Ubuntu
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_folder_remote.png" />
+                  </td>
+                  <td>
+                    Shared Project Files
+                  </td>
+                  <td>
+                    Linux
+                  </td>
+                  <td>
+                    Red Hat
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_vpn.png" />
+                  </td>
+                  <td>
+                    Área de trabalho remota VPN
+                  </td>
+                  <td>
+                    Windows
+                  </td>
+                  <td>
+                    XP
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_computer.png" />
+                  </td>
+                  <td>
+                    Isabele pescocinho
+                  </td>
+                  <td>
+                    Mac OS
+                  </td>
+                  <td>
+                    10.5
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_computer.png" />
+                  </td>
+                  <td>
+                    Cabeçuda
+                  </td>
+                  <td>
+                    Mac OS
+                  </td>
+                  <td>
+                    10.6
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_computer.png" />
+                  </td>
+                  <td>
+                    Fofinha
+                  </td>
+                  <td>
+                    Mac OS
+                  </td>
+                  <td>
+                    10.6
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_computer.png" />
+                  </td>
+                  <td>
+                    Bocó
+                  </td>
+                  <td>
+                    Mac OS
+                  </td>
+                  <td>
+                    10.5
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_computer.png" />
+                  </td>
+                  <td>
+                    Priquitinha
+                  </td>
+                  <td>
+                    Mac OS
+                  </td>
+                  <td>
+                    10.5
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_computer.png" />
+                  </td>
+                  <td>
+                    Folote
+                  </td>
+                  <td>
+                    Mac OS
+                  </td>
+                  <td>
+                    10.5
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_computer.png" />
+                  </td>
+                  <td>
+                    Bobona
+                  </td>
+                  <td>
+                    Windows
+                  </td>
+                  <td>
+                    7
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_computer.png" />
+                  </td>
+                  <td>
+                    Demente
+                  </td>
+                  <td>
+                    Windows
+                  </td>
+                  <td>
+                    Vista
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_computer.png" />
+                  </td>
+                  <td>
+                    Rabuda
+                  </td>
+                  <td>
+                    Windows
+                  </td>
+                  <td>
+                    Vista
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_computer.png" />
+                  </td>
+                  <td>
+                    Gostosa
+                  </td>
+                  <td>
+                    Windows
+                  </td>
+                  <td>
+                    Vista
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_computer.png" />
+                  </td>
+                  <td>
+                    Arrombada
+                  </td>
+                  <td>
+                    Windows
+                  </td>
+                  <td>
+                    Vista
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_computer.png" />
+                  </td>
+                  <td>
+                    Cheirosa
+                  </td>
+                  <td>
+                    Windows
+                  </td>
+                  <td>
+                    Vista
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_computer.png" />
+                  </td>
+                  <td>
+                    Esfolozada
+                  </td>
+                  <td>
+                    Windows
+                  </td>
+                  <td>
+                    7
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_computer.png" />
+                  </td>
+                  <td>
+                   Baby
+                  </td>
+                  <td>
+                    Windows
+                  </td>
+                  <td>
+                    Vista
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_computer.png" />
+                  </td>
+                  <td>
+                    Meteoro
+                  </td>
+                  <td>
+                    Windows
+                  </td>
+                  <td>
+                    Vista
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_computer.png" />
+                  </td>
+                  <td>
+                    Vagabunda
+                  </td>
+                  <td>
+                    Windows
+                  </td>
+                  <td>
+                    Vista
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_computer.png" />
+                  </td>
+                  <td>
+                    Pé grande
+                  </td>
+                  <td>
+                    Windows
+                  </td>
+                  <td>
+                    Vista
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_computer.png" />
+                  </td>
+                  <td>
+                    Bobinha
+                  </td>
+                  <td>
+                    Windows
+                  </td>
+                  <td>
+                    Vista
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="abs window_bottom">
+          LAN: Unidas Net
+        </div>
+      </div>
+      <span class="abs ui-resizable-handle ui-resizable-se"></span>
+    </div>
+  </div>
+  <div class="abs" id="bar_top">
+    <span class="float_right" id="clock"></span>
+    <ul>
+      <li>
+        <a class="menu_trigger" href="#">Desktop</a>
+        <ul class="menu">
+          
+  </div>
+  <div class="abs" id="bar_bottom">
+    <a class="float_left" href="#" id="show_desktop" title="Show Desktop">
+      <img src="assets/images/icons/icon_22_desktop.png" />
+    </a>
+    <ul id="dock">
+      <li id="icon_dock_computer">
+        <a href="#window_computer">
+          <img src="assets/images/icons/icon_22_computer.png" />
+          Computador
+        </a>
+      </li>
+      <li id="icon_dock_drive">
+        <a href="#window_drive">
+          <img src="assets/images/icons/icon_22_drive.png" />
+          Disco rígido
+        </a>
+      </li>
+      <li id="icon_dock_disc">
+        <a href="#window_disc">
+          <img src="assets/images/icons/icon_22_disc.png" />
+          Músicas
+        </a>
+      </li>
+      <li id="icon_dock_network">
+        <a href="#window_network">
+          <img src="assets/images/icons/icon_22_network.png" />
+          Rede
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+<script>
+  !window.jQuery && document.write(unescape('%3Cscript src="assets/js/jquery.js"%3E%3C/script%3E'));
+  !window.jQuery && document.write(unescape('%3Cscript src="assets/js/jquery.ui.js"%3E%3C/script%3E'));
+</script>
+<script src="assets/js/jquery.desktop.js"></script>
+<script>
+  var _gaq = [['_setAccount', 'UA-166674-8'], ['_trackPageview']];
+
+  (function(d, t) {
+    if (window.location.hostname !== 'desktop.sonspring.com') {
+      return;
+    }
+
+    var g = d.createElement(t),
+    s = d.getElementsByTagName(t)[0];
+    g.async = true;
+    g.src = '//www.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g, s);
+  })(this.document, 'script');
+</script>
+</body>
+</html>
